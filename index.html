@@ -3,72 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome do Projeto</title>
+    <title>Achou? Pegou!</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-    <img src="assets/logo.svg" alt="Logo do Projeto" class="logo">
+    <header>
 
-    <h1>Nome do Projeto</h1>
+        <img src="assets/Captura de Tela (1).png" alt="Logo Achou? Pegou!" class="logo">
 
-    <p>Uma frase resumindo a proposta do projeto.</p>
-</header>
+        <h1>Achou? Pegou!</h1>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#objetivos">Objetivos</a>
-    <a href="#tecnologias">Tecnologias</a>
-    <a href="#equipe">Equipe</a>
-</nav>
+        <p>Encontre ou devolva objetos perdidos na escola.</p>
 
-<main>
+    </header>
 
-<section id="sobre">
-    <h2>Sobre o Projeto</h2>
+    <nav>
 
-    <p>
-        Explique qual problema o projeto resolve e por que ele é importante.
-    </p>
-</section>
+        <a href="#inicio">Início</a>
 
-<section id="objetivos">
-    <h2>Objetivos</h2>
+        <a href="#objetos">Objetos</a>
 
-    <ul>
-        <li>Objetivo 1</li>
-        <li>Objetivo 2</li>
-        <li>Objetivo 3</li>
-    </ul>
-</section>
+        <a href="#cadastro">Cadastrar</a>
 
-<section id="tecnologias">
-    <h2>Tecnologias</h2>
+        <a href="#equipe">Equipe</a>
 
-    <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-    </ul>
-</section>
+    </nav>
 
-<section id="equipe">
-    <h2>Equipe</h2>
+    <main>
 
-    <p>
-        Apresente os integrantes da equipe.
-    </p>
-</section>
+        <section id="inicio" class="hero">
 
-</main>
+            <h2>Bem-vindo!</h2>
 
-<footer>
-    <p>Projeto Multidisciplinar • 2026</p>
-</footer>
+            <p>
+                Pesquise objetos perdidos ou cadastre um item encontrado.
+            </p>
 
-<script src="js/script.js"></script>
+            <input
+                type="text"
+                id="pesquisa"
+                placeholder="Pesquisar objeto...">
+
+            <button onclick="pesquisar()">
+                Pesquisar
+            </button>
+
+        </section>
+
+        <section id="objetos">
+
+            <h2>Objetos Encontrados</h2>
+
+            <div id="listaObjetos" class="cards">
+
+            </div>
+
+        </section>
+
+        <section id="cadastro">
+
+            <h2>Cadastrar Objeto</h2>
+
+            <form id="formObjeto">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Nome do objeto"
+                    required>
+
+                <input
+                    type="text"
+                    id="local"
+                    placeholder="Local encontrado"
+                    required>
+
+                <input
+                    type="date"
+                    id="data"
+                    required>
+
+                <textarea
+                    id="descricao"
+                    placeholder="Descrição do objeto">
+                </textarea>
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+
+        </section>
+
+        <section id="equipe">
+
+            <h2>Equipe</h2>
+
+            <p>
+                Projeto desenvolvido pela equipe <strong>Alpha B3</strong>.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>© 2026 • Projeto Achou? Pegou! • Alpha B3</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
 
 </body>
 </html>
