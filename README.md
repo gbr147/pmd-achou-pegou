@@ -84,9 +84,9 @@ Atualize esta estrutura caso novas pastas ou arquivos sejam criados.
 
 ```PMD-ACHOU-PEGOU
 .
-├── assets/banner.jpg Captura de Tela (1).png logo.svg
-├── css/ style.css
-├── js/ script.js
+├── assets/
+├── css/ 
+├── js/
 ├── .gitinore
 ├── index.html
 ├── LICENSE
@@ -115,7 +115,7 @@ git clone https://github.com/gbr147/pmd-achou-pegou.git
 
 Acesse a versão publicada no GitHub Pages:
 
-https://github.com/gbr147/pmd-achou-pegou.git
+https://gbr147.github.io/pmd-achou-pegou/
 
 ---
 
