@@ -2,13 +2,13 @@
 Substitua pelo nome definido para o projeto.
 -->
 
-# Nome do Projeto
+# Achou? Pegou!
 
 <!--
 Escreva uma breve descrição (1 ou 2 frases) apresentando a ideia do projeto.
 -->
 
-> Breve descrição do projeto.
+> Nosso Site/App tem como seu propósito ajudar aqueles que perderam seus pertences de forma mais pratica e rápida.
 
 ---
 
@@ -19,7 +19,7 @@ Explique qual problema o projeto pretende resolver, por que ele é importante
 e qual solução foi proposta pela equipe.
 -->
 
-Descreva aqui o projeto.
+O Achou? Pegou! Tem como objetivo auxiliar as pessoas a encontrar de volta seus itens perdidos, ele é importante pois isso aconteci com bastante frequência e com esse site resolveria esse problmea.
 
 ---
 
@@ -31,7 +31,7 @@ Descreva aqui o projeto.
 Descreva o principal objetivo do projeto.
 -->
 
-Descreva o objetivo geral.
+Ajudar a encontrar seus pertences.
 
 ### Objetivos Específicos
 
@@ -39,9 +39,9 @@ Descreva o objetivo geral.
 Liste os principais objetivos específicos do projeto.
 -->
 
-- Objetivo específico 1
-- Objetivo específico 2
-- Objetivo específico 3
+- Facilitar a procura de pertences.
+- Icentivar a ser ético.
+- Conectar pessoas.
 
 ---
 
@@ -54,10 +54,13 @@ informem a principal responsabilidade de cada integrante.
 
 | Nome | Função |
 |------|--------|
-| Integrante 1 | |
-| Integrante 2 | |
-| Integrante 3 | |
-| Integrante 4 | |
+| Lucas Peixoto | Responsável pelo site e Desenvolvedor. |
+| Brayhan | Responsável pelos testes. |
+| Murillo | Responsável pelos testes e Documentação. |
+| Matheus Sales | Desenvolvedor |
+| Gabriel Soares | Gerente de projeto. |
+| Gabriel do santos | Desenvolvedor |
+
 
 ---
 
@@ -79,12 +82,14 @@ Liste as tecnologias utilizadas para desenvolver o site de apresentação.
 Atualize esta estrutura caso novas pastas ou arquivos sejam criados.
 -->
 
-```text
+```PMD-ACHOU-PEGOU
 .
-├── assets/
-├── css/
-├── js/
+├── assets/banner.jpg Captura de Tela (1).png logo.svg
+├── css/ style.css
+├── js/ script.js
+├── .gitinore
 ├── index.html
+├── LICENSE
 └── README.md
 ```
 
@@ -101,7 +106,7 @@ Explique como visualizar o site de apresentação.
 1. Clone este repositório.
 
 ```bash
-git clone https://github.com/usuario/pmd-nome-do-projeto.git
+git clone https://github.com/gbr147/pmd-achou-pegou.git
 ```
 
 2. Abra o arquivo `index.html` em um navegador.
@@ -110,7 +115,7 @@ git clone https://github.com/usuario/pmd-nome-do-projeto.git
 
 Acesse a versão publicada no GitHub Pages:
 
-https://usuario.github.io/pmd-nome-do-projeto
+https://github.com/gbr147/pmd-achou-pegou.git
 
 ---
 
@@ -120,9 +125,9 @@ https://usuario.github.io/pmd-nome-do-projeto
 Atualize esta seção conforme o andamento do projeto.
 -->
 
-Este repositório contém o site de apresentação e a documentação do Projeto Multidisciplinar.
+Este repositório contém o site de apresentação do "Achou? Pegou!.
 
-O desenvolvimento da aplicação será realizado em um repositório próprio.
+O desenvolvimento da aplicação está em desenvolvimento, ou seja, pode ocnter alguns erros.
 
 ---
 
