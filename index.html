@@ -1,122 +1,158 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Achou? Pegou!</title>
-
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Achou? Pegou! — Achados e perdidos da escola</title>
+<meta name="description" content="Entenda como funciona o Achou? Pegou!, o sistema de achados e perdidos escolar da equipe Alpha B3.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#123047; --card:#183a53; --line:rgba(255,255,255,.12);
+    --text:#f6f1e7; --muted:#a9bccb; --primary:#f0a63a; --accent:#e2762c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg);
+    background-image:radial-gradient(circle at 20% 0%, rgba(240,166,58,.18), transparent 60%);
+    background-repeat:no-repeat;
+    color:var(--text);
+    font-family:"DM Sans",system-ui,sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3{font-family:"Space Grotesk",system-ui,sans-serif;letter-spacing:-.02em;line-height:1.1}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding-top:32px}
+  .marca{font-weight:700} .marca span{color:var(--primary)}
+  .badge{border:1px solid rgba(240,166,58,.4);background:rgba(240,166,58,.1);color:var(--primary);
+         border-radius:999px;padding:4px 12px;font-size:12px;font-weight:500}
+  .hero{padding:56px 0 40px}
+  .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.2em;color:var(--muted)}
+  .hero h1{font-size:clamp(34px,6vw,60px);margin-top:16px}
+  .grad{background:linear-gradient(100deg,#f5c04f,#e2762c);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{margin-top:20px;max-width:680px;color:var(--muted);font-size:18px}
+  .hero img{width:100%;margin-top:40px;border-radius:24px;border:1px solid var(--line)}
+  section{padding:40px 0}
+  section h2{font-size:30px}
+  .grid{display:grid;gap:16px;margin-top:24px}
+  @media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;
+        box-shadow:0 18px 40px -20px rgba(6,18,28,.9)}
+  .passo{color:var(--primary);font-weight:700;font-size:14px}
+  .card h3{margin-top:8px;font-size:19px}
+  .card p{margin-top:8px;color:var(--muted);font-size:15px}
+  .stack{display:grid;gap:16px;margin-top:24px}
+  .tag{background:rgba(255,255,255,.08);color:var(--muted);border-radius:999px;padding:4px 10px;font-size:12px}
+  .head-linha{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline}
+  code{color:var(--primary);font-size:13px}
+  ul{margin-top:16px;list-style:none}
+  li{display:flex;gap:12px;color:var(--muted);font-size:15px;margin-top:8px}
+  li::before{content:"";flex:0 0 6px;height:6px;border-radius:50%;background:var(--accent);margin-top:11px}
+  .arquivos{background:var(--card);border:1px solid var(--line);border-radius:18px;margin-top:24px;overflow:hidden}
+  .arquivo{display:flex;flex-wrap:wrap;gap:8px 24px;padding:18px 20px;border-top:1px solid var(--line)}
+  .arquivo:first-child{border-top:none}
+  .arquivo code{width:170px;font-weight:700}
+  .arquivo span{color:var(--muted);font-size:15px}
+  footer{border-top:1px solid var(--line);padding:32px 0;margin-top:40px;color:var(--muted);font-size:14px}
+</style>
 </head>
 <body>
 
-    <header>
+<div class="wrap">
+  <header>
+    <span class="marca">Achou<span>?</span> Pegou<span>!</span></span>
+    <span class="badge">Site em desenvolvimento</span>
+  </header>
 
-        <img src="assets/Captura de Tela (1).png" alt="Logo Achou? Pegou!" class="logo">
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Projeto escolar · Alpha B3</p>
+      <h1>Um jeito simples de <span class="grad">reencontrar</span> o que se perdeu na escola.</h1>
+      <p class="lead">
+        Esta página explica o que é o <strong>Achou? Pegou!</strong>, como o site está
+        organizado e o que cada parte dele faz. A plataforma ainda está sendo construída —
+        o que você vê aqui é a documentação da ideia.
+      </p>
+      <img src="assets/hero-objetos.jpg" alt="Mochila, garrafa, óculos, chaves e caderno perdidos na escola">
+    </section>
 
-        <h1>Achou? Pegou!</h1>
+    <section>
+      <h2>Como funciona</h2>
+      <div class="grid">
+        <div class="card"><span class="passo">01</span><h3>Alguém acha um objeto</h3><p>Um aluno encontra uma garrafa, um casaco ou um caderno pelo colégio.</p></div>
+        <div class="card"><span class="passo">02</span><h3>Cadastra no site</h3><p>Preenche o formulário com nome do item, local e data em que foi achado.</p></div>
+        <div class="card"><span class="passo">03</span><h3>O dono pesquisa</h3><p>Quem perdeu usa a busca da página inicial para procurar pelo item.</p></div>
+        <div class="card"><span class="passo">04</span><h3>Objeto devolvido</h3><p>Com as informações do cartão, o dono recupera o que era seu.</p></div>
+      </div>
+    </section>
 
-        <p>Encontre ou devolva objetos perdidos na escola.</p>
+    <section>
+      <h2>As seções do site</h2>
+      <p class="lead" style="font-size:15px">O menu de navegação leva a quatro áreas, todas na mesma página.</p>
+      <div class="stack">
+        <article class="card">
+          <div class="head-linha"><span class="tag">Seção 1</span><h3>Início</h3><code>#inicio</code></div>
+          <p>A porta de entrada do site, com o campo de busca.</p>
+          <ul>
+            <li>Mensagem de boas-vindas explicando o propósito da plataforma.</li>
+            <li>Campo de texto “Pesquisar objeto...” para filtrar itens já cadastrados.</li>
+            <li>Botão Pesquisar que dispara a função pesquisar() do script.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="head-linha"><span class="tag">Seção 2</span><h3>Objetos Encontrados</h3><code>#objetos</code></div>
+          <p>A lista dos itens achados, exibida em cartões.</p>
+          <ul>
+            <li>A div #listaObjetos começa vazia no HTML.</li>
+            <li>O JavaScript preenche os cartões dinamicamente.</li>
+            <li>Cada cartão mostra nome, local, data e descrição do objeto.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="head-linha"><span class="tag">Seção 3</span><h3>Cadastrar Objeto</h3><code>#cadastro</code></div>
+          <p>O formulário de quem encontrou algum item.</p>
+          <ul>
+            <li>Campos obrigatórios: nome do objeto, local encontrado e data.</li>
+            <li>Campo opcional de descrição para detalhes como cor e marca.</li>
+            <li>Ao enviar, o item passa a aparecer na lista de objetos.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="head-linha"><span class="tag">Seção 4</span><h3>Equipe</h3><code>#equipe</code></div>
+          <p>Créditos do projeto escolar.</p>
+          <ul>
+            <li>Desenvolvido pela equipe Alpha B3.</li>
+            <li>Projeto acadêmico, sem fins comerciais.</li>
+            <li>Rodapé com a assinatura © 2026.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-    </header>
+    <section>
+      <h2>Estrutura dos arquivos</h2>
+      <div class="arquivos">
+        <div class="arquivo"><code>index.html</code><span>Estrutura da página: header, nav, main e footer.</span></div>
+        <div class="arquivo"><code>css/style.css</code><span>Aparência: cores, tipografia e o grid dos cartões.</span></div>
+        <div class="arquivo"><code>js/script.js</code><span>Comportamento: pesquisa e cadastro dos objetos.</span></div>
+        <div class="arquivo"><code>assets/</code><span>Imagens do projeto, como o logo do cabeçalho.</span></div>
+      </div>
+    </section>
 
-    <nav>
+    <section>
+      <div class="card">
+        <h2>Equipe Alpha B3</h2>
+        <p>O Achou? Pegou! é um projeto desenvolvido pela equipe Alpha B3 para reduzir o número
+        de objetos que ficam esquecidos na escola. As próximas etapas incluem finalizar a busca,
+        salvar os cadastros e permitir foto do objeto.</p>
+      </div>
+    </section>
+  </main>
 
-        <a href="#inicio">Início</a>
-
-        <a href="#objetos">Objetos</a>
-
-        <a href="#cadastro">Cadastrar</a>
-
-        <a href="#equipe">Equipe</a>
-
-    </nav>
-
-    <main>
-
-        <section id="inicio" class="hero">
-
-            <h2>Bem-vindo!</h2>
-
-            <p>
-                Pesquise objetos perdidos ou cadastre um item encontrado.
-            </p>
-
-            <input
-                type="text"
-                id="pesquisa"
-                placeholder="Pesquisar objeto...">
-
-            <button onclick="pesquisar()">
-                Pesquisar
-            </button>
-
-        </section>
-
-        <section id="objetos">
-
-            <h2>Objetos Encontrados</h2>
-
-            <div id="listaObjetos" class="cards">
-
-            </div>
-
-        </section>
-
-        <section id="cadastro">
-
-            <h2>Cadastrar Objeto</h2>
-
-            <form id="formObjeto">
-
-                <input
-                    type="text"
-                    id="nome"
-                    placeholder="Nome do objeto"
-                    required>
-
-                <input
-                    type="text"
-                    id="local"
-                    placeholder="Local encontrado"
-                    required>
-
-                <input
-                    type="date"
-                    id="data"
-                    required>
-
-                <textarea
-                    id="descricao"
-                    placeholder="Descrição do objeto">
-                </textarea>
-
-                <button type="submit">
-                    Cadastrar
-                </button>
-
-            </form>
-
-        </section>
-
-        <section id="equipe">
-
-            <h2>Equipe</h2>
-
-            <p>
-                Projeto desenvolvido pela equipe <strong>Alpha B3</strong>.
-            </p>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>© 2026 • Projeto Achou? Pegou! • Alpha B3</p>
-
-    </footer>
-
-    <script src="js/script.js"></script>
+  <footer>© 2026 • Projeto Achou? Pegou! • Alpha B3</footer>
+</div>
 
 </body>
 </html>
